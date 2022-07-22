@@ -6,7 +6,7 @@
     <a href="https://todo/"><img src="https://raw.finnwea.com/shield/?firstText=Platform&secondText=ToDo" /></a>
     <a href="https://github.com/raivo-otp/marketing-website/releases"><img src="https://raw.finnwea.com/vector-shields-v1/?typeKey=SemverVersion&typeValue1=raivo-otp&typeValue2=marketing-website&typeValue4=Release&cache=4"></a>
     <br/>
-    <b>A marketing website for all Raivo OTP related services with the goal of spreading knowledge and gaining popularity</b>
+    <b>A marketing website for Raivo OTP with the goal of spreading knowledge and gaining popularity</b>
     <br/>
     <sup>Raivo OTP is built by <a href="https://www.linkedin.com/in/tijme/">Tijme Gommers</a> – Buy me a coffee via <a href="https://www.paypal.me/tijmegommers">PayPal</a></sup>
     <br/>
