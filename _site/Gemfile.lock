@@ -119,9 +119,6 @@ GEM
       jekyll (~> 3.0)
     jekyll-feed (0.15.1)
       jekyll (>= 3.7, < 5.0)
-    jekyll-get-json (1.0.0)
-      deep_merge (~> 1.2)
-      jekyll (>= 3.0)
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
     jekyll-github-metadata (2.13.0)
@@ -263,7 +260,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll-get-json (~> 1.0)
   jekyll-github-metadata (~> 2.13)
   webrick (~> 1.7)
 

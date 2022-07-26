@@ -33,11 +33,6 @@ features                                  :
     description                           : Experience the fast native app built in Swift 5. And it's open source too!
     fontawesome_icon_name                 : arrow-alt-circle-down
 
-# Changelog
-jekyll_get_json:
-  - data: changelog
-    json: 'https://api.github.com/repos/raivo-otp/ios-application/releases'
-
 repository: raivo-otp/ios-application
 
 # Theme
