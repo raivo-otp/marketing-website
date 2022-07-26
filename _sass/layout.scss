@@ -613,14 +613,21 @@ footer {
 	justify-content: center;
 }
 
+.footerLinks {
+	display: flex;
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 15px;
+}
+
 .footerText {
 	color: $footer-text-color;
+	font-size: 1.5rem;
 	display: block;
 	line-height: 1.5;
 	width: 100%;
 	text-align: center;
-	padding-top: 70px;
-	padding-bottom: 70px;
+	padding-bottom: 15px;
 }
 
 .footerIcons {
@@ -628,12 +635,6 @@ footer {
 	display: flex;
 	flex: 0 0 100%;
 	justify-content: center;
-}
-
-.footerLinks {
-	display: flex;
-	text-align: center;
-	padding-bottom: 70px;
 }
 
 .footerLinks a {

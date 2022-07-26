@@ -3,19 +3,14 @@ ios_app_id                                : 1459042137
 ios_app_country                           : us
 appstore_link                             : https://apps.apple.com/app/raivo-otp/id1459042137?platform=iphone
 presskit_download_link                    : https://github.com/raivo-otp/ios-application/tree/master/Assets
-github_community                          : https://github.com/raivo-otp/ios-application/graphs/contributors
 app_icon                                  : assets/app-icon.png
 app_name                                  : Raivo OTP
 app_name_short                            : Raivo
 app_subtitle                              : Simply the best authenticator.
 app_description                           : A native, lightweight, non-commercial and secure multi-factor authenticator that synchronises your one-time passwords across all of your Apple devices.
-
-# Author
-your_name                                 : Tijme Gommers                    
-your_link                                 : https://tij.me/                    
-your_city                                 : Netherlands                                
-twitter_username                          : tijme
-github_username                           : tijme
+twitter_username                          : RaivoOTP
+github_username                           : raivo
+github_community                          : https://github.com/raivo-otp/ios-application/graphs/contributors
 
 # Features
 features                                  :

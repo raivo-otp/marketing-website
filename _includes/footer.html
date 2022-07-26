@@ -1,10 +1,16 @@
 <footer>
-	{% if site.your_name %}
-	<p class="footerText">{{ site.app_name_short }} is a labor of love by {% if site.your_link %}<a href="{{ site.your_link }}">{% endif %}{{ site.your_name }}{% if site.your_link %}</a>{% endif %}{% if site.your_city %} and the {{ site.app_name_short }} <a href="{{ site.github_community }}">community</a>.{% endif %}</p>
-	{% endif %}
+	<div class="footerLinks">
+		{% for page in site.pages %}
+			<a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a>
+		{% endfor %}
+		{% if site.presskit_download_link %}
+			<a href="{{ site.presskit_download_link }}" target="_blank" rel="noopener nofollow">Press Kit</a>
+		{% endif %}
+	</div>
+	<p class="footerText">{{ site.app_name_short }} is a labor of love by its <a href="{{ site.github_community }}" target="_blank" rel="noopener nofollow">community</a> on Github.</p>
 	<div class="footerIcons">
 		{% if site.twitter_username %}
-			<a href="https://twitter.com/{{ site.twitter_username }}">
+			<a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener nofollow">
 				<span class="fa-stack fa-1x">
 					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
 					<i class="socialIconTop fab fa-twitter fa-stack-1x"></i>
@@ -12,20 +18,12 @@
 			</a>
 		{% endif %}
 		{% if site.github_username %}
-			<a href="https://github.com/{{ site.github_username }}">
+			<a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener nofollow">
 				<span class="fa-stack fa-1x">
 					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
 					<i class="socialIconTop fab fa-github fa-stack-1x"></i>
 				</span>
 			</a>
-		{% endif %}
-	</div>
-	<div class="footerLinks">
-		{% for page in site.pages %}
-			<a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a>
-		{% endfor %}
-		{% if site.presskit_download_link %}
-			<a href="{{ site.presskit_download_link }}">Press Kit</a>
 		{% endif %}
 	</div>
 </footer>
