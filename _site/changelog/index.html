@@ -47,7 +47,670 @@
                 <article class="page markdown-body">
                     <h1 id="changelog">Changelog</h1>
 
-<p>contains the latest features, bug fixes and improvements of Raivo. Further down the page, you can wander endlessly through the history of the app. Will you scroll all the way down to Raivo’s birth?</p>
+<p>Release 1.4.2 contains the latest features, bug fixes and improvements . Further down the page, you can wander endlessly through the history of Raivo. Will you scroll all the way down to its birth?</p>
+
+<p><br /></p>
+
+<h2 id="release-142"><strong>Release 1.4.2</strong></h2>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>ZIP archive export screen was partially blank when viewed on an iPad.</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-141"><strong>Release 1.4.1</strong></h2>
+
+<p>New feature(s):</p>
+<ul>
+  <li>Possibility to hide previous OTP (#125, thanks for this contribution @timskkim).</li>
+</ul>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>Explanation to enable iCloud Drive in setup (#64).</li>
+  <li>Changed springboard name from “Raivo OTP” to “Raivo” (#91).</li>
+</ul>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>ZIP-archive export broken since last update (#134).</li>
+  <li>ZIP-archive couldn’t be extracted if it contained weird characters (#59).</li>
+  <li>Unable to scan QR-codes in dark mode (#137).</li>
+  <li>Unable to scan QR-codes with spaces in paths (#141).</li>
+  <li>App looks for QR-code after entering details manually (#142).</li>
+  <li>White icons not visible in light mode (#136).</li>
+  <li>Cannot configure iCloud sync when accessibility zoom is enabled (#43).</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-140"><strong>Release 1.4.0</strong></h2>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>Migrated to MongoDBs’ latest Realm framework</li>
+  <li>Migrated Valet to remove deprecated Keychain calls</li>
+  <li>Migrated unit-tests from TravisCI to Github Actions</li>
+</ul>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>In some cases encrypted AES-encrypted archives could not be extracted.</li>
+</ul>
+
+<p>Side effect(s):</p>
+<ul>
+  <li>Increased deployment target from iOS 13 to iOS 14.</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-132"><strong>Release 1.3.2</strong></h2>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>URI encoding in QR code URI generation.</li>
+  <li>Error handling in OTP QR code scan user story.</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-133"><strong>Release 1.3.3</strong></h2>
+
+<p><strong>This is a TestFlight build for testing purposes with end-users.</strong></p>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>Searching passwords could inverse the order (#76).</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-131"><strong>Release 1.3.1</strong></h2>
+
+<p><strong>This is a TestFlight build for testing purposes with end-users.</strong></p>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>Updated most of the dependencies to the latest version.</li>
+</ul>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>QR codes could sometimes not be read by other apps (#98).</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-130"><strong>Release 1.3.0</strong></h2>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>Migrated from CocoaPods to Swift Package Manager</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-122"><strong>Release 1.2.2</strong></h2>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>Better error handling while working with the MacOS receiver.</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-120"><strong>Release 1.2.0</strong></h2>
+
+<p>New feature(s):</p>
+<ul>
+  <li>Compatibility for the upcoming MacOS receiver</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-1120"><strong>Release 1.1.20</strong></h2>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>Prevented error on empty <code class="language-plaintext highlighter-rouge">otpauth://</code> URI click</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-1119"><strong>Release 1.1.19</strong></h2>
+
+<p>New feature(s):</p>
+<ul>
+  <li>Possibility to change the app icon.</li>
+</ul>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>Force clear of icon cache on refresh click.</li>
+  <li>Show icon names in icon selection view.</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-1118"><strong>Release 1.1.18</strong></h2>
+
+<p>New feature(s):</p>
+<ul>
+  <li>Changelog button in settings screen.</li>
+</ul>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>Loading state not dismissed after archive export  (#48).</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-1117"><strong>Release 1.1.17</strong></h2>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>Sync status is now shown in the settings screen  (#30).</li>
+</ul>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>Missing capital in title of setup screen.</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-1116"><strong>Release 1.1.16</strong></h2>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>New ZIP-archive export in SwiftUI that allows local backups (#24).</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-1115"><strong>Release 1.1.15</strong></h2>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>Content in HTML and JSON export did not match  (#45).</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-1114"><strong>Release 1.1.14</strong></h2>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>Third party keyboards are disabled throughout the entire application (#27).</li>
+</ul>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>Raivo OTP could crash when tapping the bottom search button while adding a password manually.</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-1113"><strong>Release 1.1.13</strong></h2>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>Show extra context for “Personal iCloud” account (#26).</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-1112"><strong>Release 1.1.12</strong></h2>
+
+<p><strong>This is a TestFlight build for testing purposes with end-users.</strong></p>
+
+<p>New feature(s):</p>
+<ul>
+  <li>Support for iPadOS (#18).</li>
+</ul>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>Fixed invalid icon URL in HTML file in ZIP-archive export.</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-1111"><strong>Release 1.1.11</strong></h2>
+
+<p><strong>This is a TestFlight build for testing purposes with end-users.</strong></p>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>Biometric unlock was not always allowed after the inactivity lock triggered (#25).</li>
+  <li>A malicious OTP issuer could trigger Cross-Site Scripting in the HTML file of the ZIP-archive export (#31).</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-1110"><strong>Release 1.1.10</strong></h2>
+
+<p>New feature(s):</p>
+<ul>
+  <li>Support for <code class="language-plaintext highlighter-rouge">otpauth://</code> link clicks (#14).</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-v119"><strong>Release v1.1.9</strong></h2>
+
+<p><strong>This is a TestFlight build for testing purposes with end-users.</strong></p>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>Smaller alert and notification banners.</li>
+  <li>Some color changes for dark mode.</li>
+  <li>More user friendly ‘change passcode’ flow.</li>
+</ul>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>The ‘no results’ password search page was not centered vertically.</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="-release-v118">** Release v1.1.8**</h2>
+
+<p><strong>This is a TestFlight build for testing purposes with end-users.</strong></p>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>ZIP archive export now contains icons.</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-v117"><strong>Release v1.1.7</strong></h2>
+
+<p><strong>This is a TestFlight build for testing purposes with end-users.</strong></p>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>Views had an incorrect offset if the keyboard was presented.</li>
+  <li>ZIP archive export failed in some cases.</li>
+  <li>FaceID could trigger multiple times.</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-v116"><strong>Release v1.1.6</strong></h2>
+
+<p><strong>This is a TestFlight build for testing purposes with end-users.</strong></p>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>Banner/alert icons are now animated.</li>
+</ul>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>FaceID/TouchID support was not detected in some cases.</li>
+  <li>Various spelling mistakes.</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-v115"><strong>Release v1.1.5</strong></h2>
+
+<p>New feature(s):</p>
+<ul>
+  <li>DarkMode compatibility for iOS 13.0.</li>
+</ul>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>Black icons will now be grey in DarkMode.</li>
+</ul>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>Sometimes views could disappear behind the keyboard.</li>
+  <li>Several memory access violations.</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-v114"><strong>Release v1.1.4</strong></h2>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>Possibly fixed a bug where the app could randomly reset to its initial state (yes again).</li>
+  <li>Database writes in threads while the encryption key is nil.</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-v113"><strong>Release v1.1.3</strong></h2>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>There was a partial black frame around the QR code scan view on some iDevices.</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-v112"><strong>Release v1.1.2</strong></h2>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>Fixed a threading bug which caused random crashes if iCloud synchronization was in use.</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-v111"><strong>Release v1.1.1</strong></h2>
+
+<p><strong>This is a TestFlight build for testing purposes with end-users.</strong></p>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>The password list is now primarily sorted by the issuer and secondly by the account.</li>
+  <li>Removed one-time passwords with the status “deleted” from the data export.</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-v110"><strong>Release v1.1.0</strong></h2>
+
+<p><strong>This is a TestFlight build for testing purposes with end-users.</strong></p>
+
+<p>New feature(s):</p>
+<ul>
+  <li>QR codes in the data export functionality.</li>
+  <li>Debug logging (opt-in) in the settings tab.</li>
+</ul>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>Data export now also works without having the Mail app installed.</li>
+  <li>Usernames in one-time passwords are now optional.</li>
+  <li>Removed requirement of verifying your fingerprint when enabling TouchID.</li>
+  <li>A status message is now shown after exporting data.</li>
+  <li>Removed SVG dependencies (now fully migrated to Xcode supported vectors).</li>
+  <li>The navigation bar now has a more modern look and feel.</li>
+  <li>Your password needs to be confirmed during setup (#5).</li>
+  <li>Changed author icon from Twitter logo to user icon in the settings tab.</li>
+  <li>A message is shown while scanning an invalid QR code.</li>
+</ul>
+
+<p>Modification(s):</p>
+<ul>
+  <li>The support e-mail address has been changed.</li>
+  <li>Renamed “PIN code” to “Passcode”.</li>
+</ul>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>Possibly fixed a bug where the app could randomly reset to its initial state.</li>
+  <li>Invalid background on empty search results in the icon view searcher (#8).</li>
+  <li>The height of the banners/alerts could be incorrect in some cases.</li>
+  <li>The app could crash when using an incorrect passcode after locking the app.</li>
+  <li>Various spelling mistakes.</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-v103"><strong>Release v1.0.3</strong></h2>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>Xcode 10 compatibility so the app can be deployed to the App Store.</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-v102"><strong>Release v1.0.2</strong></h2>
+
+<p><strong>This is a TestFlight build for testing purposes with end-users.</strong></p>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>A new popup banner design including emoji support</li>
+  <li>The tint color now also works in keyboard accessory views</li>
+</ul>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>Removed square background from popup banners</li>
+  <li>Removed invalid background color from the icon search error view</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-v100"><strong>Release v1.0.0</strong></h2>
+
+<p>New feature(s):</p>
+<ul>
+  <li>~DarkMode compatibility for iOS 13.0~ (#4).</li>
+</ul>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>The data export feature now also includes JSON.</li>
+  <li>You can now remove an icon from an OTP.</li>
+  <li>PIN code view alignment (it’s correctly centered now).</li>
+</ul>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>The lockscreen timer didn’t work in some cases.</li>
+  <li>A spelling mistake when adding your first OTP (#1).</li>
+  <li>A spelling mistake in one of the App Store previews.</li>
+  <li>This build should fix the malfunctioning FaceID unlock (#3).</li>
+  <li>Fixed a bug where loading empty icons could trigger Fail2Ban.</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="release-v101"><strong>Release v1.0.1</strong></h2>
+
+<p><strong>This is a TestFlight build for testing purposes with end-users.</strong></p>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>This build should fix the partial black frame around the camera while scanning QR codes (#2).</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="beta-v0010"><strong>Beta v0.0.10</strong></h2>
+
+<p><strong>This is a TestFlight build for testing purposes with end-users.</strong></p>
+
+<p>New feature(s):</p>
+<ul>
+  <li>A new PIN code input design</li>
+  <li>Export passwords to an AES encrypted ZIP archive</li>
+  <li>Show the QR code for a specific password</li>
+</ul>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>App will lock after an Apple ID change (if iCloud synchronisation is in use)</li>
+  <li>Automatically try biometrical unlock if the app is locked and is moved to the foreground</li>
+</ul>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>Multiple synchronisation providers could be selected on setup</li>
+  <li>Reset state of refresh button if HTTP call fails during icon repository search</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="beta-v008"><strong>Beta v0.0.8</strong></h2>
+
+<p><strong>This is a TestFlight build for testing purposes with end-users.</strong></p>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>Fail2Ban blocked the user after loading three OTP tokens without icons (this affected the availability of the icon repository)</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="beta-v007"><strong>Beta v0.0.7</strong></h2>
+
+<p><strong>This is a TestFlight build for testing purposes with end-users.</strong></p>
+
+<p>New feature(s):</p>
+<ul>
+  <li>Custom issuer icons (using <a href="https://github.com/tijme/raivo-issuer-icons">this</a> icon repository)</li>
+  <li>Issuer icon effects (‘original’ or ‘grayscale’ for now)</li>
+  <li>Added ‘about’ and ‘legal’ view to the setup flow</li>
+</ul>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>OTP digit selection via dropdown instead of text input</li>
+  <li>Increased the size of the HOTP ‘continue’ button</li>
+</ul>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>Authentication lockout could trigger after 5 TouchID logins since the counter did not reset.</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="beta-v005"><strong>Beta v0.0.5</strong></h2>
+
+<p><strong>This is a TestFlight build for testing purposes with end-users.</strong></p>
+
+<p>New feature(s):</p>
+<ul>
+  <li>Unlock Raivo using TouchID</li>
+  <li>HOTP (counter based OTP) support</li>
+</ul>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>All queued banners will be dismissed if a new banner will be showed</li>
+</ul>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>Removed grey area under navigation bar in PIN code change view</li>
+  <li>The lock screen did not trigger after the specified time if no touches occurred</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
+
+<p><br /></p>
+
+<h2 id="beta-v004"><strong>Beta v0.0.4</strong></h2>
+
+<p><strong>This is a TestFlight build for testing purposes with end-users.</strong></p>
+
+<p>New feature(s):</p>
+<ul>
+  <li>Touch to copy an OTP to your clipboard</li>
+  <li>Swipe to edit or delete an OTP</li>
+  <li>PIN code brute-force protection</li>
+  <li>Forgot encryption key functionality</li>
+</ul>
+
+<p>Improvement(s):</p>
+<ul>
+  <li>Clarified setup flow for new users</li>
+  <li>Improved the search query for better search results</li>
+  <li>Moved from <a href="https://github.com/evgenyneu/keychain-swift">KeychainSwift</a> to <a href="https://github.com/square/Valet">Valet</a></li>
+  <li>Easier data migrations in future releases</li>
+  <li>Only get iCloud encryption challenge in setup flow</li>
+</ul>
+
+<p>Fixed bug(s):</p>
+<ul>
+  <li>Lock screen could trigger after 5 minutes of inactivity in the setup screen</li>
+  <li>OTP sync loop could occur which caused flashing OTPs on the main screen</li>
+  <li>Crashes could occur while signing in, signing out and signing back in again</li>
+</ul>
+
+<p><em>Please note that some versions have not been marked as a public release since they only contain development improvements.</em></p>
 
 <p><br /></p>
 

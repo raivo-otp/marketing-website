@@ -264,6 +264,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-get-json (~> 1.0)
+  jekyll-github-metadata (~> 2.13)
   webrick (~> 1.7)
 
 BUNDLED WITH

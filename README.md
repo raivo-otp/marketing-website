@@ -27,7 +27,9 @@ If you discover a security vulnerability, we would like to know about it so we c
 
 ## Development
 
-ToDo
+    ./dotenv bundle install
+    
+    ./dotenv bundle exec jekyll serve
 
 - https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll
 

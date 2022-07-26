@@ -5,6 +5,9 @@
 *.p8
 *.ini
 
+##### Environment
+.env
+
 ##### Windows
 # Windows thumbnail cache files
 Thumbs.db
