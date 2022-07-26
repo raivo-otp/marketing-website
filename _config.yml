@@ -6,7 +6,7 @@ presskit_download_link                    : https://github.com/raivo-otp/ios-app
 app_icon                                  : assets/app-icon.png
 app_name                                  : Raivo OTP
 app_name_short                            : Raivo
-app_subtitle                              : Simply the best authenticator.
+app_subtitle                              : Simply the best authenticator
 app_description                           : A native, lightweight, non-commercial and secure multi-factor authenticator that synchronises your one-time passwords across all of your Apple devices.
 twitter_username                          : RaivoOTP
 github_username                           : raivo
