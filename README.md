@@ -29,6 +29,8 @@ If you discover a security vulnerability, we would like to know about it so we c
 
 ToDo
 
+- https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll
+
 ## Privacy
 
 Raivo does not collect personally identifiable information in any way. Please refer to the [privacy policy](https://github.com/raivo-otp/marketing-website/blob/master/PRIVACY.md) for information.
