@@ -37,6 +37,6 @@ If you discover a security vulnerability, we would like to know about it so we c
 
 Raivo does not collect personally identifiable information in any way. Please refer to the [privacy policy](https://github.com/raivo-otp/marketing-website/blob/master/PRIVACY.md) for information.
 
-## License
+## License & Copyright
 
 Copyright ® 2022 Tijme Gommers. All rights reserved. View [copyright-notice-and-license.md](https://github.com/raivo-otp/marketing-website/blob/master/copyright-notice-and-license.md) for the full version of the license and copryight notice.
