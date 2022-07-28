@@ -82,7 +82,7 @@ collections:
 
 plugins:
   - jekyll-get-json
- # - jekyll-github-metadata
-
+  - jekyll-remote-include
+  
 # Markdown rendering
 markdown: kramdown

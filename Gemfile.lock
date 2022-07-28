@@ -1,4 +1,10 @@
 GIT
+  remote: https://github.com/netrics/jekyll-remote-include.git
+  revision: a230e824783d5c6783235d5a05bff17d6bb11324
+  specs:
+    jekyll-remote-include (1.0.2)
+
+GIT
   remote: https://github.com/tijme/forked-jekyll-get-json
   revision: ea0503eb6fbc4e988cf6d3329c7a2fa8617dd570
   specs:
@@ -269,7 +275,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-get-json!
-  jekyll-github-metadata (~> 2.13)
+  jekyll-remote-include!
   webrick (~> 1.7)
 
 BUNDLED WITH
