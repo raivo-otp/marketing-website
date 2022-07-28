@@ -26,4 +26,5 @@ jobs:
             ${{ runner.os }}-gems-
       - uses:  helaili/jekyll-action@v2
         with:
+          target_branch: 'gh-pages'
           token: ${{ secrets.GITHUB_TOKEN }}
