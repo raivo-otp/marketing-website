@@ -12,6 +12,10 @@ twitter_username                          : RaivoOTP
 github_username                           : raivo
 github_community                          : https://github.com/raivo-otp/ios-application/graphs/contributors
 
+jekyll_get_json:
+  - data: changelog
+    json: 'https://api.github.com/repos/raivo-otp/ios-application/releases'
+
 # Features
 features                                  :
   - title                                 : Synchronisation
@@ -76,7 +80,8 @@ collections:
     permalink: /:path/
 
 plugins:
-  - jekyll-github-metadata
+  - jekyll-get-json
+ # - jekyll-github-metadata
 
 # Markdown rendering
 markdown: kramdown
