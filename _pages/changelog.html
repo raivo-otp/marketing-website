@@ -1,0 +1,60 @@
+---
+layout: text
+title: Changelog
+include_in_header: true
+include_in_footer: true
+order: 1
+---
+
+<h1>Changelog</h1>
+
+<p>{{ site.data.changelog[0].name }} contains the latest features, bug fixes and improvements. Further down the page, you can wander endlessly through the history of Raivo.</p>
+
+{% for release in site.data.changelog %}
+
+    {% if forloop.index <= 5 %}
+
+        <a href="#{{ release.tag_name }}" class="anchor-hover">
+            <h2 id="{{ release.tag_name }}">
+                {% include icon.html name='link' %}
+                {{ release.name }}
+                <small>{{ release.tag_name }}</small>
+            </h2>
+        </a>
+
+        {{ release.body | markdownify }}
+
+        <a href="{{ release.html_url }}" class="icon-link" target="_blank" rel="noopener nofollow">
+            {% include icon.html name='github' %}
+            <span class="text">View on GitHub</span>
+        </a>
+
+        <br>
+        
+    {% endif %}
+
+{% endfor %}
+
+<a href="#other" class="anchor-hover">
+    <h2 id="other">
+        {% include icon.html name='link' %}
+        Older releases
+    </h2>
+</a>
+
+<ul>
+    {% for release in site.data.changelog %}
+
+        {% if forloop.index > 5 %}
+
+            <li>
+                <a href="{{ release.html_url }}" target="_blank" rel="noopener nofollow">
+                    {{ release.name }} ({{ release.tag_name }})
+                </a>
+            </li>
+
+        {% endif %}
+
+    {% endfor %}
+</ul>
+

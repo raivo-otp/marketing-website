@@ -32,6 +32,6 @@ $social-icons-background-color: {{ site.social_icons_background_color }};
 
 @import 
     "reset",
+    "markdown",
     "icons",
-    "layout",
-    "markdown"
+    "layout"

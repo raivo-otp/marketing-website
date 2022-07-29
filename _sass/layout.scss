@@ -1,3 +1,69 @@
+.table {
+	display: table !important;
+	width: 100%;
+
+	tbody {
+
+		tr {
+
+		 	td {
+
+		 		ul {
+		 			margin-bottom: 0px;
+		 		}
+		 	}
+		}
+	}
+}
+
+.anchor-hover {
+
+	h2 {
+		line-height: 1 !important;
+
+		.icon {
+			display: none;
+
+			font-size: 20px;
+			position: absolute;
+
+			margin-top: 2.5px;
+			margin-left: -30px;
+		}
+
+		small {
+			opacity: 0.6;
+			font-weight: normal;
+			font-size: 0.6em;
+		}
+	}
+
+	&:hover {
+		text-decoration: none !important;
+
+		.icon {
+			display: block;
+		}
+	}
+}
+
+.icon-link {
+	display: table;
+	
+	.icon {
+		vertical-align: text-top;
+		margin-right: 2px !important;
+	}
+
+	&:hover {
+		text-decoration: none !important;
+	
+		.text {
+			text-decoration: underline !important;
+		}
+	}
+}
+
 .imageWrapper {					// Sets the background image in the header area
 	height: 714px;
 	background: 
@@ -24,6 +90,10 @@
 
 	.headerBackground {
 		height: 80px;
+	}
+
+	.appDescription {
+		min-height: 225px;
 	}
 
 }
@@ -617,7 +687,8 @@ footer {
 	display: flex;
 	text-align: center;
 	padding-top: 70px;
-	padding-bottom: 15px;
+	padding-bottom: 10px;
+	font-size: 1.75rem;
 }
 
 .footerText {
@@ -627,7 +698,7 @@ footer {
 	line-height: 1.5;
 	width: 100%;
 	text-align: center;
-	padding-bottom: 15px;
+	padding-bottom: 10px;
 }
 
 .footerIcons {
@@ -635,6 +706,27 @@ footer {
 	display: flex;
 	flex: 0 0 100%;
 	justify-content: center;
+
+	.padding {
+		padding: 0px 5px; 
+
+		a {
+			font-size: 2rem;
+		    font-weight: 100;
+		    display: block;
+		    background: #e6e6e6;
+		    color: #666666;
+		    padding: 10px;
+		    border-radius: 50px;
+
+		    .icon {
+		    	display: block;
+				width: 1em;
+				height: 1em;
+				overflow: hidden;
+		    }
+		}
+	}
 }
 
 .footerLinks a {
@@ -672,8 +764,7 @@ footer {
 		line-height: 1.5;
 		width: 100%;
 		text-align: center;
-		padding-top: 54px;
-		padding-bottom: 61px;
+		padding-bottom: 10px;
 	}
 	
 	.footerIcons {

@@ -2,28 +2,27 @@
 	<div class="logo">
 		<div class="appIconShadow">
 			{% if page.url != '/' %}
-				<a href="{{ site.baseurl }}" target="_self"><img class="headerIcon" src="{{ site.app_icon | absolute_url }}"></a>
+				<a href="{{ '/' | absolute_url }}" target="_self">
+					<img class="headerIcon" src="{{ site.application_app_icon_link | absolute_url }}">
+				</a>
 			{% else %}
-				<img class="headerIcon" src="{{ site.app_icon | absolute_url }}">
+				<img class="headerIcon" src="{{ site.application_app_icon_link | absolute_url }}">
 			{% endif %}
 			<div class="divider"></div>
 		</div>
-		{% if page.url != '/' %}
-			<p class="headerName">{{ site.app_name }}</p>
-		{% else %}
-			<p class="headerName">{{ site.app_name }}</p>
-		{% endif %}
+		<p class="headerName">{{ site.application_name_full }}</p>
 	</div>
 	<nav class="scroll">
 		<ul>
-			{% for page in site.pages %}
+			{% assign sorted_pages = site.pages | sort:"order" %}
+			{% for page in sorted_pages %}
 				{% if page.include_in_header == true %}
-				<li><a href="{{ page.url | absolute_url }}" target="_self">{{ page.title }}</a></li>
+					<li>
+						<a href="{{ page.url | absolute_url }}" target="_self">{{ page.title }}</a>
+					</li>
 				{% endif %}
 			{% endfor %}
-			{% if site.presskit_download_link %}
-				<li><a href="{{ site.presskit_download_link }}" target="_blank" rel="noopener nofollow">Press Kit</a></li>
-			{% endif %}
 		</ul>
 	</nav>
 </header>
+

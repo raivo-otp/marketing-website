@@ -1,44 +1,64 @@
 # Application
-ios_app_id                                : 1459042137
-ios_app_country                           : us
-appstore_link                             : https://apps.apple.com/app/raivo-otp/id1459042137?platform=iphone
-presskit_download_link                    : https://github.com/raivo-otp/ios-application/tree/master/Assets
-app_icon                                  : img/app-icon.png
-app_name                                  : Raivo OTP
-app_name_short                            : Raivo
-app_subtitle                              : Simply the best authenticator
-app_description                           : A native, lightweight, non-commercial and secure multi-factor authenticator that synchronises your one-time passwords across all of your Apple devices.
-twitter_username                          : RaivoOTP
-github_username                           : raivo
-github_community                          : https://github.com/raivo-otp/ios-application/graphs/contributors
-author                                    : Tijme Gommers
+application_name_full                     : Raivo OTP
+application_name_short                    : Raivo
+application_subtitle                      : Simply the best authenticator
+application_description                   : A native, lightweight, non-commercial and secure multi-factor authenticator that synchronises your one-time passwords across all of your Apple devices.
+application_app_icon_link                 : img/app-icon.png
+application_apple_app_store_ios_id        : 1459042137
+application_apple_app_store_ios_link      : https://apps.apple.com/app/raivo-otp/id1459042137?platform=iphone
+application_apple_app_store_mac_id        : 1498497896
+application_apple_app_store_mac_link      : https://apps.apple.com/app/raivo-otp/id1498497896
+application_presskit_link                 : https://github.com/raivo-otp/ios-application/tree/master/Assets
 
-jekyll_get_json:
-  - data: changelog
-    json: 'https://api.github.com/repos/raivo-otp/ios-application/releases'
+# Raivo (socials)
+social_application_github                 : raivo-otp
+social_application_twitter                : RaivoOTP
+
+# Author (socials & details)
+social_author_fullname                    : Tijme Gommers
+social_author_github                      : tijme
+social_author_twitter                     : tijme
+social_author_paypal                      : https://www.paypal.com/paypalme/tijmegommers
+
+# GitHub
+github_ios_application_link               : https://github.com/raivo-otp/ios-application
+github_ios_application_community_link     : https://github.com/raivo-otp/ios-application/graphs/contributors
+github_macos_receiver_link                : https://github.com/raivo-otp/macos-receiver
+github_apns_server_link                   : https://github.com/raivo-otp/apns-server
+github_issuer_icons_link                  : https://github.com/raivo-otp/issuer-icons
+github_marketing_website_link             : https://github.com/raivo-otp/marketing-website
 
 # Features
 features                                  :
   - title                                 : Synchronisation
     description                           : Sync your one-time passwords to iCloud and never lose access to them again.
-    fontawesome_icon_name                 : magic
+    icon                                  : refresh-cw
   - title                                 : Local backup
     description                           : Stay in control. Export your one-time passwords to encrypted ZIP archives.
-    fontawesome_icon_name                 : star
+    icon                                  : download
   - title                                 : Customisation
     description                           : Add (custom) icons to your one-time passwords and apply effects to them.
-    fontawesome_icon_name                 : mobile
+    icon                                  : sliders
   - title                                 : Raivo for MacOS
     description                           : Use the MacOS companion app to send your one-time passwords to your Mac.
-    fontawesome_icon_name                 : adjust
+    icon                                  : monitor
   - title                                 : Powerfull search
     description                           : Search through all of your one-time passwords with one tap under your thumb.
-    fontawesome_icon_name                 : sync
+    icon                                  : search
   - title                                 : Native & open source
     description                           : Experience the fast native app built in Swift 5. And it's open source too!
-    fontawesome_icon_name                 : arrow-alt-circle-down
+    icon                                  : code
 
-# Theme
+# Retrieve app release data from GitHub
+jekyll_get_json:
+  - data: changelog
+    json: 'https://api.github.com/repos/raivo-otp/ios-application/releases'
+
+
+
+
+
+# Template
 topbar_color                              : "#000000"
 topbar_transparency                       : 0.1
 topbar_title_color                        : "#ffffff"
@@ -58,21 +78,17 @@ social_icons_foreground_color             : "#666666"
 social_icons_background_color             : "#e6e6e6"
 footer_text_color                         : "#666666"
 
-# Compress HTML
+# Compress output HTML
 compress_html:
   clippings: all
   comments: ["<!-- ", " -->"]
   blanklines: false
 
-####################################################
-### Jekyll Configuration. No need to touch this. ###
-####################################################
-
-# Set the Sass partials directory, as we're using @imports
+# Compress output CSS
 sass:
   style: compressed # You might prefer to minify using :compressed
 
-# Exclude these files from your production _site
+# Exlude certain files from production builds
 exclude:
   - CONTRIBUTING.md
   - LICENSE.md

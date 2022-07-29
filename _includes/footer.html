@@ -1,29 +1,27 @@
 <footer>
 	<div class="footerLinks">
-		{% for page in site.pages %}
-			<a href="{{ page.url | absolute_url }}" target="_self">{{ page.title }}</a>
+		{% assign sorted_pages = site.pages | sort:"order" %}
+		{% for page in sorted_pages %}
+			{% if page.include_in_footer == true %}
+				<a href="{{ page.url | absolute_url }}" target="_self">{{ page.title }}</a>
+			{% endif %}
 		{% endfor %}
-		{% if site.presskit_download_link %}
-			<a href="{{ site.presskit_download_link }}" target="_blank" rel="noopener nofollow">Press Kit</a>
-		{% endif %}
 	</div>
-	<p class="footerText">This website is a labor of love by Raivo's <a href="{{ site.github_community }}" target="_blank" rel="noopener nofollow">community</a> on Github.</p>
+	<p class="footerText">This website is a labor of love by Raivo's <a href="{{ site.github_ios_application_community_link }}" target="_blank" rel="noopener nofollow">community</a> on Github.</p>
 	<div class="footerIcons">
-		{% if site.twitter_username %}
-			<a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener nofollow">
-				<span class="fa-stack fa-1x">
-					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-					<i class="socialIconTop fab fa-twitter fa-stack-1x"></i>
-				</span>
-			</a>
+		{% if site.social_application_twitter %}
+			<div class="padding">
+				<a href="https://twitter.com/{{ site.social_application_twitter }}" target="_blank" rel="noopener nofollow">
+					{% include icon.html name='twitter' %}
+				</a>
+			</div>
 		{% endif %}
-		{% if site.github_username %}
-			<a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener nofollow">
-				<span class="fa-stack fa-1x">
-					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-					<i class="socialIconTop fab fa-github fa-stack-1x"></i>
-				</span>
-			</a>
+		{% if site.social_application_github %}
+			<div class="padding">
+				<a href="https://github.com/{{ site.social_application_github }}" target="_blank" rel="noopener nofollow">
+					{% include icon.html name='github' %}
+				</a>
+			</div>
 		{% endif %}
 	</div>
 </footer>
