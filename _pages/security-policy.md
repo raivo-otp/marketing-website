@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: text
 title: Security Policy
 include_in_header: false
 ---
