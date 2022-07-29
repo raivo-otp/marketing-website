@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: text
 title: Changelog
 include_in_header: true
 ---

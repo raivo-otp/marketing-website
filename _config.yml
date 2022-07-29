@@ -3,7 +3,7 @@ ios_app_id                                : 1459042137
 ios_app_country                           : us
 appstore_link                             : https://apps.apple.com/app/raivo-otp/id1459042137?platform=iphone
 presskit_download_link                    : https://github.com/raivo-otp/ios-application/tree/master/Assets
-app_icon                                  : assets/app-icon.png
+app_icon                                  : img/app-icon.png
 app_name                                  : Raivo OTP
 app_name_short                            : Raivo
 app_subtitle                              : Simply the best authenticator
@@ -11,6 +11,7 @@ app_description                           : A native, lightweight, non-commercia
 twitter_username                          : RaivoOTP
 github_username                           : raivo
 github_community                          : https://github.com/raivo-otp/ios-application/graphs/contributors
+author                                    : Tijme Gommers
 
 jekyll_get_json:
   - data: changelog
@@ -41,7 +42,7 @@ features                                  :
 topbar_color                              : "#000000"
 topbar_transparency                       : 0.1
 topbar_title_color                        : "#ffffff"
-cover_image                               : assets/headerimage.jpeg
+cover_image                               : img/headerimage.jpeg
 cover_overlay_color                       : "#363b3d"
 cover_overlay_transparency                : 0.8
 body_background_color                     : "#ffffff"
@@ -56,6 +57,13 @@ feature_icons_background_color            : "#e6e6e6"
 social_icons_foreground_color             : "#666666"
 social_icons_background_color             : "#e6e6e6"
 footer_text_color                         : "#666666"
+
+# Compress HTML
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  blanklines: false
 
 ####################################################
 ### Jekyll Configuration. No need to touch this. ###

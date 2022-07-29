@@ -14,8 +14,21 @@
 
 ## Features
 
-* ToDo
+* It's completely static (built with [Jekyll](https://jekyllrb.com/))
+* Builds are completely automated with [GitHub Pages](https://pages.github.com/).
 * It's open-source (check the [contribution policy](https://github.com/raivo-otp/marketing-website/blob/master/CONTRIBUTING.md))
+
+## Development
+
+The commands below are prefixed with `./dotenv` to source the `.env` variables to your Environment variables. Thus, make sure to create your own `.env` file by copying `.env.example` and updating the variable values.
+
+**Install dependencies:**
+
+    ./dotenv bundle install
+
+**Serve the static website:**
+
+    ./dotenv bundle exec jekyll serve
 
 ## Issues
 
@@ -25,17 +38,13 @@ Issues or new features can be reported via the [issue tracker](https://github.co
 
 If you discover a security vulnerability, we would like to know about it so we can take steps to address it as quickly as possible. Please refer to the [security policy](https://github.com/raivo-otp/marketing-website/blob/master/SECURITY.md) for information on reporting vulnerabilities.
 
-## Development
-
-    ./dotenv bundle install
-    
-    ./dotenv bundle exec jekyll serve
-
-- https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll
-
 ## Privacy
 
 Raivo does not collect personally identifiable information in any way. Please refer to the [privacy policy](https://github.com/raivo-otp/marketing-website/blob/master/PRIVACY.md) for information.
+
+## Credits
+
+Special thanks to [@jerrington](https://github.com/cjerrington) and [@therealmrmuffin](https://github.com/therealmrmuffin) for contributing to this marketing website in its early stages.
 
 ## License
 
