@@ -6,4 +6,4 @@ include_in_footer: true
 order: 5
 ---
 
-{% remote_include https://raw.githubusercontent.com/raivo-otp/ios-application/master/SECURITY.md %}
+{% remote_include https://raw.githubusercontent.com/raivo-otp/marketing-website/master/SECURITY.md %}
