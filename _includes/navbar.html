@@ -2,11 +2,7 @@
 	<div class="logo">
 		<div class="appIconShadow">
 			{% if page.url != '/' %}
-<<<<<<< HEAD:_includes/header.html
-				<a href="{{ site.url }}" target="_self"><img class="headerIcon" src="{{ site.app_icon | relative_url }}"></a>
-=======
-				<a href="../" target="_self"><img class="headerIcon" src="{{ site.app_icon | absolute_url }}"></a>
->>>>>>> c487f21 (Completely removed JavaScript. Removed external assets. Implemented HTMl compression.):_includes/navbar.html
+				<a href="{{ site.url }}" target="_self"><img class="headerIcon" src="{{ site.app_icon | absolute_url }}"></a>
 			{% else %}
 				<img class="headerIcon" src="{{ site.app_icon | absolute_url }}">
 			{% endif %}
