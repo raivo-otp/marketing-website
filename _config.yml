@@ -70,16 +70,19 @@ compress_html:
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: :compressed # You might prefer to minify using :compressed
+  style: compressed # You might prefer to minify using :compressed
 
 # Exclude these files from your production _site
 exclude:
-  - vendor
   - CONTRIBUTING.md
   - LICENSE.md
   - PRIVACY.md
   - README.md
   - SECURITY.md
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - dotenv
 
 # Force include CNAME for gh-pages deployment
 include:
