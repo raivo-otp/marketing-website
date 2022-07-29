@@ -2,7 +2,7 @@
 	<div class="logo">
 		<div class="appIconShadow">
 			{% if page.url != '/' %}
-				<a href="{{ site.url }}" target="_self"><img class="headerIcon" src="{{ site.app_icon | absolute_url }}"></a>
+				<a href="{{ site.baseurl }}" target="_self"><img class="headerIcon" src="{{ site.app_icon | absolute_url }}"></a>
 			{% else %}
 				<img class="headerIcon" src="{{ site.app_icon | absolute_url }}">
 			{% endif %}

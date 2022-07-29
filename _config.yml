@@ -81,6 +81,10 @@ exclude:
   - README.md
   - SECURITY.md
 
+# Force include CNAME for gh-pages deployment
+include:
+  - CNAME
+
 collections:
   pages:
     output: true
