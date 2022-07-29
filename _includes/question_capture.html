@@ -1,0 +1,9 @@
+<!-- Variables: question, answer, category -->
+<!-- Action: add above variables to 'faq' array -->
+
+{% assign faq_entry = '' | split: '' %}
+{% assign faq_entry = faq_entry | push: include.category %}
+{% assign faq_entry = faq_entry | push: include.question %}
+{% assign faq_entry = faq_entry | push: include.answer %}
+
+{% assign faq = faq | push: faq_entry %}

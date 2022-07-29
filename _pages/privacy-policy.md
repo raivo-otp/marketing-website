@@ -1,6 +1,6 @@
 ---
 layout: text
-title: Privacy Policy
+title: Privacy
 include_in_header: false
 include_in_footer: true
 order: 4

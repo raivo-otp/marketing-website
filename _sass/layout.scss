@@ -18,17 +18,17 @@
 
 .anchor-hover {
 
-	h2 {
+	h1, h2, h3, h4, h5, h6 {
 		line-height: 1 !important;
 
 		.icon {
 			display: none;
 
-			font-size: 20px;
+			font-size: 80%;
 			position: absolute;
 
 			margin-top: 2.5px;
-			margin-left: -30px;
+			margin-left: -1.5%;
 		}
 
 		small {
@@ -742,6 +742,11 @@ footer {
 
 	.footerLinks {
 		flex-direction: column;
+		padding-bottom: 70px;
+	}
+
+	.footerText {
+		padding-bottom: 25px !important;
 	}
 
 	.footerLinks a {

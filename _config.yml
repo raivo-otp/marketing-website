@@ -6,6 +6,7 @@ application_description                   : A native, lightweight, non-commercia
 application_app_icon_link                 : img/app-icon.png
 application_apple_app_store_ios_id        : 1459042137
 application_apple_app_store_ios_link      : https://apps.apple.com/app/raivo-otp/id1459042137?platform=iphone
+application_apple_app_store_ios_beta      : https://testflight.apple.com/join/v5529czJ
 application_apple_app_store_mac_id        : 1498497896
 application_apple_app_store_mac_link      : https://apps.apple.com/app/raivo-otp/id1498497896
 application_presskit_link                 : https://github.com/raivo-otp/ios-application/tree/master/Assets
@@ -48,7 +49,7 @@ features                                  :
   - title                                 : Native & open source
     description                           : Experience the fast native app built in Swift 5. And it's open source too!
     icon                                  : code
-
+  
 # Retrieve app release data from GitHub
 jekyll_get_json:
   - data: changelog

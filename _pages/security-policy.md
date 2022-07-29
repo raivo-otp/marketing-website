@@ -1,6 +1,6 @@
 ---
 layout: text
-title: Security Policy
+title: Security
 include_in_header: false
 include_in_footer: true
 order: 5

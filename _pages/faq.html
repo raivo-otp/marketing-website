@@ -1,0 +1,212 @@
+---
+layout: text
+title: FAQ
+include_in_header: true
+include_in_footer: false
+order: 1
+---
+
+<h1>FAQ</h1>
+{% assign faq = '' | split: '' %}
+
+<p>Below are some of the most frequently asked questions (FAQ) about {{ site.application_name_full }}.</p>
+
+<!-- What is Raivo OTP? -->
+{% capture question %}
+	What is {{ site.application_name_full }}?
+{% endcapture %}
+{% capture answer %}
+	<p>{{ site.application_name_full }} is a mobile application designed for Apple iPhones and Apple iPads. {{ site.application_name_full }} can be used to secure your online identity. You already have a username and password for various online services. However, your password can be breached, which makes you vulnerable to hacks. To mitigate this risk, security experts came up with a solution called Multi-Factor Authentication (MFA).</p>
+
+	<p>MFA comes in many forms, the most common one being a 6-digit code on your phone. Whenever you authenticate to one of your accounts, you have to enter your 6-digit code besides your username and password. The 6-digit code changes every 30 seconds, which is why it can't be easily breached. It increases the cyber resilience of your online identity.</p>
+
+	<p>You can enable MFA in almost every online service. It is generally found on the (security) settings page of the online service. Whenever you enable it, you need to scan a QR-code using {{ site.application_name_full }}. The 6-digit code that changes every 30 seconds is then stored in {{ site.application_name_full }}.</p>
+
+	<p>After enabling MFA for an online service, you have to enter the 6-digit code everytime you authenticate using your username and password. You can find the 6-digit code in {{ site.application_name_full }} at all time.</p>
+{% endcapture %}
+{% include question_capture.html category='General' question=question answer=answer %}
+
+<!-- What are one-time passwords? -->
+{% capture question %}
+	What are one-time passwords?
+{% endcapture %}
+{% capture answer %}
+	<p>A one-time password (OTP) is a password that you can have in addition to the username and password you use for online services. As the name states, you can only use an OTP once. Don't worry, the OTP will change every 30 seconds, after which you can use it again. As it changes every 30 seconds, it is difficult for hackers to obtain it. Therefore, using an OTP increases your cyber resilience.</p>
+{% endcapture %}
+{% include question_capture.html category='General' question=question answer=answer %}
+
+<!-- Are my one-time passwords encrypted? -->
+{% capture question %}
+	Are my one-time passwords encrypted?
+{% endcapture %}
+{% capture answer %}
+	<p>Yes, all one-time passwords (effectively the seeds) stored in {{ site.application_name_full }} for iOS are encrypted using your encryption (master) password and your PIN code. If you have Apple iCloud synchronisation enabled, your one-time passwords in Apple iCloud are encrypted using your encryption (master) password.</p>
+	<p>{{ site.application_name_full }} for MacOS does not store any one-time passwords. It only receives them from {{ site.application_name_full }} for iOS. The connection between {{ site.application_name_full }} for iOS and {{ site.application_name_full }} for MacOS is encrypted using an encryption key that was generated during the installation of {{ site.application_name_full }} for MacOS.</p>
+	<p>If you export a ZIP-archive using {{ site.application_name_full }} for iOS, the ZIP-archive is encrypted using your encryption (master) password.</p>
+{% endcapture %}
+{% include question_capture.html category='General' question=question answer=answer %}
+
+<!-- Is Raivo OTP available for Android or another operating system? -->
+{% capture question %}
+	Is {{ site.application_name_full }} available for operating systems?
+{% endcapture %}
+{% capture answer %}
+	<p>{{ site.application_name_full }} is only available for iOS and MacOS. It will not be supported on other operating systems such as Windows or Android. The {{ site.application_name_full }} MacOS application is simply a companion application that receives OTP's when you tap them in {{ site.application_name_full }} for iOS. The MacOS application will never evolve in a fully fledged application as it compromises the security level.</p>
+{% endcapture %}
+{% include question_capture.html category='General' question=question answer=answer %}
+
+<!-- Download / install? -->
+{% capture question %}
+	How do I install {{ site.application_name_full }}?
+{% endcapture %}
+{% capture answer %}
+	<p>Download {{ site.application_name_full }} from the iOS or MacOS App Store.</p>
+	<a href="{{ application_apple_app_store_ios_link }}" class="icon-link" target="_blank" rel="noopener nofollow">
+	    {% include icon.html name='download' %}
+	    <span class="text">Download {{ site.application_name_full }} for iOS</span>
+	</a>
+	<a href="{{ application_apple_app_store_mac_link }}" class="icon-link" target="_blank" rel="noopener nofollow">
+	    {% include icon.html name='download' %}
+	    <span class="text">Download {{ site.application_name_full }} for MacOS</span>
+	</a>
+{% endcapture %}
+{% include question_capture.html category='Installation' question=question answer=answer %}
+
+<!-- Can I become a beta tester? -->
+{% capture question %}
+	Can I become a <i>beta</i> tester?
+{% endcapture %}
+{% capture answer %}
+	<p>Yes, you can join the {{ site.application_name_full }} <i>beta</i> by downloading {{ site.application_name_full }} via Apple TestFlight.</p>
+
+	<a href="{{ application_apple_app_store_ios_beta }}" class="icon-link" target="_blank" rel="noopener nofollow">
+	    {% include icon.html name='download' %}
+	    <span class="text">Download {{ site.application_name_full }} <i>beta</i></span>
+	</a>
+{% endcapture %}
+{% include question_capture.html category='Installation' question=question answer=answer %}
+
+<!-- How do I configure Raivo for iOS? -->
+{% capture question %}
+	How do I configure {{ site.application_name_full }} for iOS once installed?
+{% endcapture %}
+{% capture answer %}
+	<ol>
+		<li>
+			Open {{ site.application_name_full }} from your homescreen.
+			<br>
+			<small>It is the white icon with the red shield.</small>
+		</li>
+		<li>
+			Select a synchronisation provider. Afterwards tap continue.
+			<br>
+			<small>This provider will store your passwords (encrypted) and synchronise them across your devices. We strongly recommend using Apple iCloud.</small>
+		</li>
+		<li>
+			Choose a strong encryption (master) password and save it in your password manager. Afterwards tap continue.
+			<br>
+			<small>If you forget this encryption (master) password you will lose access to your OTPs. You don't have to enter it every time you open the app, just during (re)installation.</small>
+		</li>
+		<li>
+			You need to set a PIN code. Afterwards tap continue, confirm your PIN code, and tap continue again.
+			<br>
+			<small>The PIN code is required everytime you unlock the app.</small>
+		</li>
+		<li>
+			At last, {{ site.application_name_full }} gives you the option to enable biometrical unlock (e.g. FaceID).
+			<br>
+			<small>By enabling biometrical unlock you don't have to enter your PIN code everytime you open the app.</small>
+		</li>
+	</ol>
+{% endcapture %}
+{% include question_capture.html category='Installation' question=question answer=answer %}
+
+<!-- How do I configure Raivo for MacOS? -->
+{% capture question %}
+	How do I configure {{ site.application_name_full }} for MacOS once installed?
+{% endcapture %}
+{% capture answer %}
+	<ol>
+		<li>
+			A prereqesuit for using the MacOS app is that you have {{ site.application_name_full }} for iOS installed.
+			<br>
+			<small>You cannot use the MacOS app without {{ site.application_name_full }} for iOS.</small>
+		</li>
+		<li>
+			After installation, click on the {{ site.application_name_full }} shield in the MacoS status bar.
+			<br>
+			<small>The status bar is the bar in the top of your screen (it contains e.g. your battery level).</small>
+		</li>
+		<li>
+			Open preferences via the {{ site.application_name_full }} menu in the status bar.
+			<br>
+			<small>An actual application window will open after clicking preferences.</small>
+		</li>
+		<li>
+			Click on 'Get started' and in the mean time open {{ site.application_name_full }} on your iOS device.
+			<br>
+			<small>We will use the iOS app to connect it to the MacOS app.</small>
+		</li>
+		<li>
+			In the iOS app, go to 'Settings', then 'Receivers' and tap the '+' button in the top right corner.
+			<br>
+			<small>A camera view will now open which you need to point to your MacOS device.</small>
+		</li>
+		<li>
+			Scan the QR-code in the MacOS app using the iOS app.
+			<br>
+			<small>{{ site.application_name_full }} for MacOS and iOS are now synced. Whenever you tap an OTP in {{ site.application_name_full }} for iOS, the OTP will be sent to the clipboard of your MacOS device.</small>
+		</li>
+	</ol>
+{% endcapture %}
+{% include question_capture.html category='Installation' question=question answer=answer %}
+
+<!-- Are my one-time passwords encrypted? -->
+{% capture question %}
+	How do I extract a ZIP-archive export?
+{% endcapture %}
+{% capture answer %}
+	<p>Make sure to send the export file to your computer. On your computer, you can extract the ZIP-archive using any ZIP-utility. Your ZIP-archive export is encrypted using your encryption (master) password that you've configured during the setup of {{ site.application_name_full }} for iOS.</p>
+{% endcapture %}
+{% include question_capture.html category='Usage' question=question answer=answer %}
+
+<!-- Create list of categories -->
+{% assign categories = '' | split: '' %}
+{% for question in faq %}
+	{% unless categories contains question[0] %}
+		{% assign categories = categories | push: question[0] %}
+	{% endunless %}
+{% endfor %}
+
+<!-- Output table of contents -->
+<ul>
+	{% for category in categories %}
+	<li>
+		<strong>{{ category }}</strong>
+		<ul>
+			{% for faq_entry in faq %}
+				{% if faq_entry[0] == category %}
+					<li>
+						<a href="#{{ faq_entry[1] | slugify }}" target="_self" rel="noopener nofollow">
+							{{ faq_entry[1] }}
+						</a>
+					</li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</li>
+	{% endfor %}
+</ul>
+
+<!-- Output questions and answers -->
+
+{% for category in categories %}
+	<h2>{{ category }}</h2>
+	{% for faq_entry in faq %}
+		{% if faq_entry[0] == category %}
+			{% assign question = faq_entry[1] %}
+			{% assign answer = faq_entry[2] %}
+			{% include question.html question=question answer=answer %}
+		{% endif %}
+	{% endfor %}
+{% endfor %}

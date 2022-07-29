@@ -1,0 +1,14 @@
+<div class="faq">
+
+    <a href="#{{ question | slugify }}" class="anchor-hover">
+        <h4 id="{{ question | slugify }}">
+            {% include icon.html name='link' %}
+            {{ include.question }}
+        </h4>
+    </a>
+
+    <div class="answer">
+        {{ include.answer }}
+    </div>
+
+</div>
