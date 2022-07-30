@@ -15,7 +15,3 @@ This license and copyright notice and this permission notice shall be included i
 ## Processed Format
 
 Modification, duplication, and (re)distribution of the Services in binary or published format ("Processed Format") for any purposes and/or reasons is strictly prohibited without the explicit permission from Raivo OTP. Permission for modification, duplication, and (re)distribution of the "Service" in Processed Format can be requested via [GitHub](https://github.com/raivo-otp/ios-application/issues/new?assignees=tijme&labels=Question).
-
-## Copyright
-
-Copyright © 2022 Tijme Gommers. All rights reserved.
