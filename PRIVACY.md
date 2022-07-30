@@ -20,7 +20,7 @@ Our Service does not collect any personally identifiable information that can be
 
 ## Service Providers
 
-We may employ Thrd Party companies and individuals to facilitate our Service ("Service Providers"), to provide the Service on our behalf or to perform Service-related services. These third parties do not have access to your Personal Data.
+We may employ Third Party companies and individuals to facilitate our Service ("Service Providers"), to provide the Service on our behalf or to perform Service-related services. These third parties do not have access to your Personal Data.
 
 ## Links To Other Sites
 
@@ -36,4 +36,4 @@ We may update our Privacy Policy from time to time. We will notify you of any ch
 
 ## Contact
 
-If you have any questions, suggestions or concerns about this Privacy Policy, do not hesitate to get in touch via `t (dot) gommers (plus) raivo (at) outlook (dot) com`.
+If you have any questions, suggestions or concerns about this Privacy Policy, do not hesitate to get in touch via `t(dot)gommers(plus)raivo(at)outlook(dot)com`.
