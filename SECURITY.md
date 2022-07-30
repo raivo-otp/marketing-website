@@ -1,6 +1,6 @@
 # Security Policy
 
-> Effective date: July 22, 2022
+> Effective date: July 30, 2022
 
 Raivo OTP ("us", "we", "our", "Raivo", "Tijme Gommers") operates the Raivo OTP related services (the "Services"). The Services include and are limited to the Source Format and Processed Format of [Raivo OTP for Apple iOS](https://github.com/raivo-otp/ios-application), [Raivo OTP for Apple MacOS](https://github.com/raivo-otp/macos-receiver), [Raivo OTP Issuer Icons](https://github.com/raivo-otp/issuer-icons), [Raivo OTP APNS Server](https://github.com/raivo-otp/apns-server) and [Raivo OTP Marketing Website](https://github.com/raivo-otp/marketing-website) (raivo-otp.com).
 
