@@ -3,7 +3,7 @@ layout: text
 title: Security
 include_in_header: false
 include_in_footer: true
-order: 5
+order: 8
 ---
 
 {% remote_include https://raw.githubusercontent.com/raivo-otp/marketing-website/master/SECURITY.md %}
