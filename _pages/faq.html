@@ -161,6 +161,15 @@ order: 1
 {% endcapture %}
 {% include question_capture.html category='Installation' question=question answer=answer %}
 
+<!-- How to add an issuer icon? -->
+{% capture question %}
+	How can I add a custom issuer icon?
+{% endcapture %}
+{% capture answer %}
+	<p>{{ site.application_name_full }} uses GitHub to manage and host issuer icons. To add your own icon, create a pull request to the <a href="https://github.com/raivo-otp/issuer-icons" target="_blank" rel="noopener nofollow">repository</a> using a GitHub account. <a href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/working-with-your-remote-repository-on-github-or-github-enterprise/creating-an-issue-or-pull-request" target="_blank" rel="noopener nofollow">This</a> guide from GitHub describes how you can create your first pull request.</p>
+{% endcapture %}
+{% include question_capture.html category='Usage' question=question answer=answer %}
+
 <!-- Are my one-time passwords encrypted? -->
 {% capture question %}
 	How do I extract a ZIP-archive export?
