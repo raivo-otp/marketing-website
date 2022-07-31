@@ -48,4 +48,4 @@ Special thanks to [@jerrington](https://github.com/cjerrington) and [@therealmrm
 
 ## License
 
-Copyright © 2022 Tijme Gommers. All rights reserved. View [LICENSE.md](https://github.com/raivo-otp/marketing-website/blob/master/LICENSE.md) for the full license.
+The source of Raivo OTP is copyrighted but available to anyone on the internet. You can use it in accordence of the license. View [LICENSE.md](https://github.com/raivo-otp/marketing-website/blob/master/LICENSE.md) for the full license.
