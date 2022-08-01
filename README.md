@@ -3,7 +3,7 @@
 </p>
 <p align="center">
     <a href="https://github.com/raivo-otp/marketing-website/blob/master/LICENSE.md"><img src="https://raw.finnwea.com/shield/?firstText=Source&secondText=Licensed" /></a>
-    <a href="https://todo/"><img src="https://raw.finnwea.com/shield/?firstText=Platform&secondText=ToDo" /></a>
+    <a href="https://todo/"><img src="https://raw.finnwea.com/shield/?firstText=Platform&secondText=Web(server)" /></a>
     <a href="https://github.com/raivo-otp/marketing-website/releases"><img src="https://raw.finnwea.com/vector-shields-v1/?typeKey=SemverVersion&typeValue1=raivo-otp&typeValue2=marketing-website&typeValue4=Release&cache=4"></a>
     <br/>
     <b>A marketing website for Raivo OTP with the goal of spreading knowledge and gaining popularity</b>
@@ -36,7 +36,8 @@ Issues or new features can be reported via the [issue tracker](https://github.co
 
 ## Security
 
-If you discover a security vulnerability, we would like to know about it so we can take steps to address it as quickly as possible. Please refer to the [security policy](https://github.com/raivo-otp/marketing-website/blob/master/SECURITY.md) for information on reporting vulnerabilities.
+If you discover a security vulnerability, we would like to know about it so we can take steps to address it as quickly as possible. Please report your vulnerability via our [HackerOne](https://hackerone.com/raivo) program. If you want to know more about how we keep Raivo OTP secure, check out the [security policy](https://github.com/raivo-otp/marketing-website/blob/master/SECURITY.md).
+
 
 ## Privacy
 
