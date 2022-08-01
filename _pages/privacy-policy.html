@@ -1,0 +1,10 @@
+---
+layout: text
+title: Privacy
+include_in_header: false
+include_in_footer: true
+order: 7
+---
+
+{% capture content %}{% remote_include https://raw.githubusercontent.com/raivo-otp/marketing-website/master/PRIVACY.md %}{% endcapture %}
+{{ content | markdownify | replace: ' href="http', ' target="_blank" rel="noopener nofollow" href="http' }}
