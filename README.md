@@ -45,7 +45,7 @@ Raivo does not collect personally identifiable information in any way. Please re
 
 ## Credits
 
-Special thanks to [@jerrington](https://github.com/cjerrington) and [@therealmrmuffin](https://github.com/therealmrmuffin) for contributing to this marketing website in its early stages.
+Special thanks to [@cjerrington](https://github.com/cjerrington) and [@therealmrmuffin](https://github.com/therealmrmuffin) for contributing to this marketing website in its early stages.
 
 ## License
 
