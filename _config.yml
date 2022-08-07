@@ -40,14 +40,14 @@ features                                  :
   - title                                 : Customisation
     description                           : Add (custom) icons to your one-time passwords and apply effects to them.
     icon                                  : sliders
-  - title                                 : Raivo for MacOS
-    description                           : Use the MacOS companion app to send your one-time passwords to your Mac.
-    icon                                  : monitor
+  - title                                 : Dark mode
+    description                           : Discover the beauty of Ravo OTP's dark side with a fully featured dark mode.
+    icon                                  : moon
   - title                                 : Powerfull search
     description                           : Search through all of your one-time passwords with one tap under your thumb.
     icon                                  : search
   - title                                 : Native & open source
-    description                           : Experience the fast native app built in Swift 5. And it's open source too!
+    description                           : Experience the fast native application built in Swift 5. And it's open source too!
     icon                                  : code
   
 # Retrieve app release data from GitHub

@@ -55,6 +55,19 @@ order: 1
 {% endcapture %}
 {% include question_capture.html category='General' question=question answer=answer %}
 
+<!-- What is the difference between Apple Handoff and Raivo's MacOS app? -->
+{% capture question %}
+	What does {{ site.application_name_full }} for MacOS do that Apple Handoff doesn't?
+{% endcapture %}
+{% capture answer %}
+	<p>Apple Handoff has two annoying requirements that {{ site.application_name_full }} for MacOS doesn't have.</p>
+	<ul>
+		<li>Handoff doesn't work without Bluetooth, {{ site.application_name_full }} for MacOS does!</li>
+		<li>Handoff doesn't work cross iCloud account, {{ site.application_name_full }} for MacOS does!</li>
+	</ul>
+{% endcapture %}
+{% include question_capture.html category='General' question=question answer=answer %}
+
 <!-- Download / install? -->
 {% capture question %}
 	How do I install {{ site.application_name_full }}?

@@ -86,6 +86,18 @@
 	background-color: rgba($header-color, $header-transparency);
 }
 
+@media only screen and (max-width: 992px) {
+
+	.headerBackground {
+		height: 80px;
+	}
+
+	.appDescription {
+		min-height: 135px;
+	}
+
+}
+
 @media only screen and (max-width: 768px) {
 
 	.headerBackground {
@@ -93,7 +105,7 @@
 	}
 
 	.appDescription {
-		min-height: 225px;
+		min-height: 260px;
 	}
 
 }
@@ -109,12 +121,13 @@
 	padding-left: 15px;
 	padding-right: 15px;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 115px 876px auto auto;
+	grid-template-rows: 115px 876px auto auto auto;
 	grid-column-gap: 30px;
 	grid-template-areas: 
 		"h h h h h h h h h h h h"
 		"p p p p p i i i i i i i"
 		"c c c c c c c c c c c c"
+		"d d d d d e e e e e e e"
 		"f f f f f f f f f f f f";
 }
 
@@ -141,13 +154,15 @@
 			"i i i i i i i i i i i i"
 			"p p p p p p p p p p p p"
 			"c c c c c c c c c c c c"
+			"d d d d d d d d d d d d"
+			"e e e e e e e e e e e e"
 			"f f f f f f f f f f f f";
 	}
 }
 
 .page {
 	margin-top: 30px;
-	margin-bottom: 70px;
+	margin-bottom: 93px;
 	grid-column: 3/11;
 }
 
@@ -155,7 +170,7 @@
 
 	.page {
 		margin-top: 30px;
-		margin-bottom: 70px;
+		margin-bottom: 93px;
 		grid-column: 1/-1;
 	}
 	
@@ -323,7 +338,7 @@ nav > ul li a:active {
 @media only screen and (max-width: 992px) {
 
 	.appInfo {
-		padding-top: 50px;
+		padding-top: 10px;
 		justify-content: center;
 	}
 
@@ -673,6 +688,76 @@ nav > ul li a:active {
 } 
 
 
+/*
+@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
+*/
+
+.macText {
+	margin-top: 93px;
+	grid-area: d;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	align-content: center;
+
+	@media only screen and (max-width: 992px) {
+		justify-content: center;
+
+		.appName,
+		.appSubtitle {
+			align-self: center;
+		}
+	}
+
+	.appNameSubtitleContainer {
+		margin-left: 0px !important;
+	}
+
+	.appDescriptionContainer {
+		margin-top: 15px;
+		font-size: 2.2rem;
+
+		.appDescription {
+			min-height: 0px;
+		}
+	}
+
+	.downloadButtonsContainer {
+		margin-top: 30px;
+
+		a {
+			display: block;
+		}
+	}
+
+	* {
+		color: #000000 !important;
+	}
+}
+
+.macScreenshot {
+	margin-top: 93px;
+	grid-area: e;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: right;
+
+	@media only screen and (max-width: 992px) {
+		margin-top: 47px;
+	}
+	
+	@media only screen and (max-width: 768px) {
+		display: none;
+	}
+
+	img {
+		align-self: start;
+		max-width: 100%;
+
+	}
+}
+
 
 // Footer
 
@@ -686,7 +771,7 @@ footer {
 .footerLinks {
 	display: flex;
 	text-align: center;
-	padding-top: 70px;
+	padding-top: 93px;
 	padding-bottom: 10px;
 	font-size: 1.75rem;
 }
@@ -702,7 +787,7 @@ footer {
 }
 
 .footerIcons {
-	padding-bottom: 70px;
+	padding-bottom: 93px;
 	display: flex;
 	flex: 0 0 100%;
 	justify-content: center;
@@ -742,7 +827,7 @@ footer {
 
 	.footerLinks {
 		flex-direction: column;
-		padding-bottom: 70px;
+		padding-bottom: 93px;
 	}
 
 	.footerText {
@@ -773,7 +858,7 @@ footer {
 	}
 	
 	.footerIcons {
-		padding-bottom: 70px;
+		padding-bottom: 93px;
 		display: flex;
 	}
 	
