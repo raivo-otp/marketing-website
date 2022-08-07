@@ -183,12 +183,21 @@ order: 1
 {% endcapture %}
 {% include question_capture.html category='Usage' question=question answer=answer %}
 
-<!-- Are my one-time passwords encrypted? -->
+<!-- How to extract the ZIP-archive? -->
 {% capture question %}
 	How do I extract a ZIP-archive export?
 {% endcapture %}
 {% capture answer %}
 	<p>Make sure to send the export file to your computer. On your computer, you can extract the ZIP-archive using any ZIP-utility. Your ZIP-archive export is encrypted using your encryption (master) password that you've configured during the setup of {{ site.application_name_full }} for iOS.</p>
+{% endcapture %}
+{% include question_capture.html category='Usage' question=question answer=answer %}
+
+<!-- How to import the ZIP-archive? -->
+{% capture question %}
+	How do I restore from a ZIP-archive export?
+{% endcapture %}
+{% capture answer %}
+	<p>Unfortunately {{ site.application_name_full }} does not currently support restoring from your ZIP-archive export. This is an <a href="https://github.com/raivo-otp/ios-application/issues/22" target="_blank" rel="noopener nofollow">open feature request</a> tracked on GitHub. As an alternative way to restore from your ZIP-archive export, you can scan each QR-code in the HTML file of your ZIP-archive export manually.</p>
 {% endcapture %}
 {% include question_capture.html category='Usage' question=question answer=answer %}
 
