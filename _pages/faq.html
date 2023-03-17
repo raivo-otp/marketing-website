@@ -74,11 +74,11 @@ order: 1
 {% endcapture %}
 {% capture answer %}
 	<p>Download {{ site.application_name_full }} from the iOS or MacOS App Store.</p>
-	<a href="{{ application_apple_app_store_ios_link }}" class="icon-link" target="_blank" rel="noopener nofollow">
+	<a href="{{ site.application_apple_app_store_ios_link }}" class="icon-link" target="_blank" rel="noopener nofollow">
 	    {% include icon.html name='download' %}
 	    <span class="text">Download {{ site.application_name_full }} for iOS</span>
 	</a>
-	<a href="{{ application_apple_app_store_mac_link }}" class="icon-link" target="_blank" rel="noopener nofollow">
+	<a href="{{ site.application_apple_app_store_mac_link }}" class="icon-link" target="_blank" rel="noopener nofollow">
 	    {% include icon.html name='download' %}
 	    <span class="text">Download {{ site.application_name_full }} for MacOS</span>
 	</a>
