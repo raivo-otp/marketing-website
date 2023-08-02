@@ -74,11 +74,11 @@ order: 1
 {% endcapture %}
 {% capture answer %}
 	<p>Download {{ site.application_name_full }} from the iOS or MacOS App Store.</p>
-	<a href="{{ application_apple_app_store_ios_link }}" class="icon-link" target="_blank" rel="noopener nofollow">
+	<a href="{{ site.application_apple_app_store_ios_link }}" class="icon-link" target="_blank" rel="noopener nofollow">
 	    {% include icon.html name='download' %}
 	    <span class="text">Download {{ site.application_name_full }} for iOS</span>
 	</a>
-	<a href="{{ application_apple_app_store_mac_link }}" class="icon-link" target="_blank" rel="noopener nofollow">
+	<a href="{{ site.application_apple_app_store_mac_link }}" class="icon-link" target="_blank" rel="noopener nofollow">
 	    {% include icon.html name='download' %}
 	    <span class="text">Download {{ site.application_name_full }} for MacOS</span>
 	</a>
@@ -92,7 +92,7 @@ order: 1
 {% capture answer %}
 	<p>Yes, you can join the {{ site.application_name_full }} <i>beta</i> by downloading {{ site.application_name_full }} via Apple TestFlight.</p>
 
-	<a href="{{ application_apple_app_store_ios_beta }}" class="icon-link" target="_blank" rel="noopener nofollow">
+	<a href="{{ site.application_apple_app_store_ios_beta }}" class="icon-link" target="_blank" rel="noopener nofollow">
 	    {% include icon.html name='download' %}
 	    <span class="text">Download {{ site.application_name_full }} <i>beta</i></span>
 	</a>
@@ -197,7 +197,7 @@ order: 1
 	How do I restore from a ZIP-archive export?
 {% endcapture %}
 {% capture answer %}
-	<p>Unfortunately {{ site.application_name_full }} does not currently support restoring from your ZIP-archive export. This is an <a href="https://github.com/raivo-otp/ios-application/issues/22" target="_blank" rel="noopener nofollow">open feature request</a> tracked on GitHub. As an alternative way to restore from your ZIP-archive export, you can scan each QR-code in the HTML file of your ZIP-archive export manually.</p>
+	<p>In the settings screen, tap import and select a previously created {{ site.application_name_full }} ZIP-archive. Enter the password of the ZIP-archive (this is the master password of the {{ site.application_name_full }} installation with which you've created the export). Afterwards, all one-time passwords in the ZIP-archive will be added to your current {{ site.application_name_full }} installation.<p>
 {% endcapture %}
 {% include question_capture.html category='Usage' question=question answer=answer %}
 

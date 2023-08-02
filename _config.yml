@@ -6,7 +6,7 @@ application_description                   : A native, lightweight, non-commercia
 application_app_icon_link                 : img/app-icon.png
 application_apple_app_store_ios_id        : 1459042137
 application_apple_app_store_ios_link      : https://apps.apple.com/app/raivo-otp/id1459042137?platform=iphone
-application_apple_app_store_ios_beta      : https://testflight.apple.com/join/v5529czJ
+application_apple_app_store_ios_beta      : https://testflight.apple.com/join/F3t8jXrL
 application_apple_app_store_mac_id        : 1498497896
 application_apple_app_store_mac_link      : https://apps.apple.com/app/raivo-otp/id1498497896
 application_presskit_link                 : https://github.com/raivo-otp/ios-application/tree/master/Assets
@@ -41,9 +41,9 @@ features                                  :
     description                           : Add (custom) icons to your one-time passwords and apply effects to them.
     icon                                  : sliders
   - title                                 : Dark mode
-    description                           : Discover the beauty of Ravo OTP's dark side with a fully featured dark mode.
+    description                           : Discover the beauty of Raivo OTP's dark side with a fully featured dark mode.
     icon                                  : moon
-  - title                                 : Powerfull search
+  - title                                 : Powerful search
     description                           : Search through all of your one-time passwords with one tap under your thumb.
     icon                                  : search
   - title                                 : Native & open source
