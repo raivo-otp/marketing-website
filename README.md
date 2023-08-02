@@ -2,13 +2,13 @@
     <img src="https://raw.githubusercontent.com/raivo-otp/ios-application/master/Assets/app-icon.png" width="200"/>
 </p>
 <p align="center">
-    <a href="https://github.com/raivo-otp/marketing-website/blob/master/LICENSE.md"><img src="https://raw.finnwea.com/shield/?firstText=Source&secondText=Licensed" /></a>
-    <a href="https://todo/"><img src="https://raw.finnwea.com/shield/?firstText=Platform&secondText=Web(server)" /></a>
-    <a href="https://github.com/raivo-otp/marketing-website/releases"><img src="https://raw.finnwea.com/vector-shields-v1/?typeKey=SemverVersion&typeValue1=raivo-otp&typeValue2=marketing-website&typeValue4=Release&cache=4"></a>
+    <a href="https://github.com/raivo-otp/marketing-website/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/Source-Licenced-da0024?style=flat-square" /></a>
+    <a href="https://todo/"><img src="https://img.shields.io/badge/Platform-Webserver-da0024?style=flat-square"/></a>
+    <a href="https://github.com/raivo-otp/marketing-website/releases"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fraivo-otp%2Fmarketing-website%2Freleases%2Flatest&query=%24.name&style=flat-square&label=Latest&color=da0024"></a>
     <br/>
     <b>A marketing website for Raivo OTP with the goal of spreading knowledge and gaining popularity</b>
     <br/>
-    <sup>Raivo OTP is built by <a href="https://www.linkedin.com/in/tijme/">Tijme Gommers</a> – Buy me a coffee via <a href="https://www.paypal.me/tijmegommers">PayPal</a></sup>
+    <sup>Raivo OTP is built by <a href="https://mobime.org/">Mobime</a></sup>
     <br/>
 </p>
 

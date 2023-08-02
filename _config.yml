@@ -16,10 +16,10 @@ social_application_github                 : raivo-otp
 social_application_twitter                : RaivoOTP
 
 # Author (socials & details)
-social_author_fullname                    : Tijme Gommers
-social_author_github                      : tijme
-social_author_twitter                     : tijme
-social_author_paypal                      : https://www.paypal.com/paypalme/tijmegommers
+social_author_fullname                    : Mobime
+social_author_github                      : mobime-org
+social_author_twitter                     : 
+social_author_paypal                      : 
 
 # GitHub
 github_ios_application_link               : https://github.com/raivo-otp/ios-application
